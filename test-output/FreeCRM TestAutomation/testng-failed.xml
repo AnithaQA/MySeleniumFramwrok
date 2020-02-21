@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FreeCRM TestAutomation]">
+  <listeners>
+    <listener class-name="com.ExtentListner.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="FreeCRMPRODEMO(failed)">
+    <classes>
+      <class name="TestExecution.LoginPageTest">
+        <methods>
+          <include name="LoginPage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestExecution.LoginPageTest -->
+      <class name="TestExecution.ContactsPageTest">
+        <methods>
+          <include name="verifyCheckBoxTest"/>
+          <include name="verifyContactsLabelTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestExecution.ContactsPageTest -->
+    </classes>
+  </test> <!-- FreeCRMPRODEMO(failed) -->
+</suite> <!-- Failed suite [FreeCRM TestAutomation] -->
